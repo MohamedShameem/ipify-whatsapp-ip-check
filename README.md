@@ -57,3 +57,39 @@ This repository provides a script for automating the process of checking the cur
 6. Now, you can run the script by typing `ipcheck` in the Terminal, and it will execute the `ip_check.sh` script.
 
    > Make sure to replace `/path/to/ip_check.sh` with the actual path to your `ip_check.sh` file when setting up the alias.
+
+## Usage Examples
+
+Here are some examples of how to execute the script with and without providing an IP address:
+
+- Execute the script without providing an IP address:
+
+  ```bash
+  ./ip_check.sh
+  ```
+
+  This will automatically fetch the current IP address and compare it with any provided IP address.
+
+- Execute the script with a specific IP address:
+
+  ```bash
+  ./ip_check.sh 192.168.0.1
+  ```
+
+  This will fetch the current IP address and compare it with the provided IP address (192.168.0.1 in this example).
+
+- Execute the script using the alias `ipcheck` without providing an IP address:
+
+  ```bash
+  ipcheck
+  ```
+
+  This will execute the script, using the alias `ipcheck`, and automatically fetch the current IP address.
+
+- Execute the script using the alias `ipcheck` with a specific IP address:
+
+  ```bash
+  ipcheck 192.168.0.1
+  ```
+
+  This will execute the script, using the alias `ipcheck`, and fetch the current IP address, comparing it with the provided IP address (192.168.0.1 in this example).
