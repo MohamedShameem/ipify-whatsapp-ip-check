@@ -1,7 +1,28 @@
 #!/bin/bash
 
+# Function to show a loading indicator
+show_loading() {
+    local delay=0.1
+    local count=0
+
+    echo -n "Please wait, loading"
+
+    while :; do
+        printf "."
+        sleep $delay
+
+        ((count++))
+        if ((count == 10)); then
+            break
+        fi
+    done
+
+    echo
+}
+
 # Get the current IP address
 current_ip=$(curl -s https://api.ipify.org)
+show_loading
 
 # Check if an IP address was provided as an argument
 if [ -n "$1" ]; then
