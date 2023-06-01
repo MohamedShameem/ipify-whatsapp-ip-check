@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # Function to show a loading indicator
@@ -92,7 +91,7 @@ fi
 # Check if the user wants to send the IP via WhatsApp
 if [[ $choice =~ ^[Yy]$ ]]; then
     # Create the WhatsApp message URL
-    whatsapp_url="https://wa.me/+96500000000?text=Hi,%20Please%20whitelist%20my%20IP%20$current_ip"
+    whatsapp_url="https://wa.me/+96560954230?text=Hi,%20Please%20whitelist%20my%20IP%20$current_ip"
 
     # Open the WhatsApp message URL in the default browser
     open "$whatsapp_url"
